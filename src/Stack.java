@@ -20,6 +20,17 @@ public class Stack {
         return -1;
     }
 
+    private int peek() {
+        return arr[topOfStack];
+    }
+
+    private void pushMany(String multipleValues) {
+        String[] values = multipleValues.split(" ");
+        for (String value : values) {
+            push(Integer.parseInt(value));
+        }
+    }
+
     private void printStack() {
         for (int i=0; i<=topOfStack; i++) {
                 System.out.print(arr[i] + " ");
@@ -28,8 +39,6 @@ public class Stack {
     }
 
     public static void main(String[] args) {
-        int data[] = {7, 9, 5, 2, -5, -1, -2, 0, 4, 3};
-
         Stack stack = new Stack(10);
 
         stack.push(7);
@@ -46,5 +55,10 @@ public class Stack {
 
         stack.push(2);
         stack.printStack();
+
+        stack.pushMany("12 7 87 24");
+        stack.printStack();
+
+        System.out.println(stack.peek());
     }
 }
