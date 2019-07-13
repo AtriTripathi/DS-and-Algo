@@ -19,12 +19,31 @@ public class QuickSort {
         return i;
     }
 
+    // This is the normal sort func, which has worst space case Space Complecity: O(n)
     private void sort(int[] arr, int low, int high) {
         if (low < high) {
             int pi = partition(arr,low,high);
 
             sort(arr,low,pi-1);
             sort(arr,pi+1,high);
+        }
+    }
+
+    // This is the optimized version which uses Tail Call Elimination to reduce the Space Complexity to: O(log n)
+    private void sortOptimized(int[] arr, int low, int high) {
+        while (low < high) {
+            int pi = partition(arr,low,high);
+
+            // If left part is smaller, then recur for left part
+            if (pi - low < high - pi) {
+                sortOptimized(arr, low, pi - 1);
+                low = pi + 1;
+            }
+            // Else recur for right part
+            else {
+                sortOptimized(arr, pi + 1, high);
+                high = pi - 1;
+            }
         }
     }
 
