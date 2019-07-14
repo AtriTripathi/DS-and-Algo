@@ -17,6 +17,23 @@ public class Queue {
         } else System.out.println("Queue is full");
     }
 
+    // This is the only function which is different in Priority Queue where the value is inserted in decreasing order
+    private void priorityInsert(int value) {
+        if (numberOfItems == 0) {
+            insert(value);
+        } else {
+            int i;
+            for(i = numberOfItems-1; i>=0; i--) {
+                if (value > arr[i]) {
+                    arr[i+1] = arr[i];
+                } else break;
+            }
+            arr[i+1] = value;
+            rear++;
+            numberOfItems++;
+        }
+    }
+
     private void remove() {
         if (numberOfItems > 0) {
             arr[front] = 0;
@@ -38,7 +55,7 @@ public class Queue {
         queue.insert(2);
         queue.insert(4);
         queue.insert(7);
-        queue.remove();
+//        queue.remove();
         queue.insert(1);
         queue.insert(9);
         queue.insert(5);
