@@ -18,7 +18,7 @@ You can also Star this repository to stay updated with the latest changes.
 
 ## License
 
-Copyright [2019] [Atri Tripathi]
+Copyright 2019 Atri Tripathi
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
