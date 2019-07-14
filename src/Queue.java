@@ -1,3 +1,9 @@
+/*
+ * Developed by Atri Tripathi on 14/7/19 9:39 PM
+ * Last modified 13/7/19 11:33 PM
+ * Copyright (c) 2019. All rights reserved
+ */
+
 public class Queue {
     private int[] arr;
     private int front = 0, rear = 0, numberOfItems = 0;

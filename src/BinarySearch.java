@@ -1,3 +1,9 @@
+/*
+ * Developed by Atri Tripathi on 14/7/19 9:39 PM
+ * Last modified 12/7/19 8:03 PM
+ * Copyright (c) 2019. All rights reserved
+ */
+
 public class BinarySearch {
     private int[] arr;
 

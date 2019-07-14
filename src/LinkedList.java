@@ -1,3 +1,9 @@
+/*
+ * Developed by Atri Tripathi on 14/7/19 9:39 PM
+ * Last modified 14/7/19 1:03 PM
+ * Copyright (c) 2019. All rights reserved
+ */
+
 class Link {
     String bookName;
     int price;

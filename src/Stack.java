@@ -1,3 +1,9 @@
+/*
+ * Developed by Atri Tripathi on 14/7/19 9:39 PM
+ * Last modified 13/7/19 2:24 AM
+ * Copyright (c) 2019. All rights reserved
+ */
+
 public class Stack {
     private int[] arr;
     private int topOfStack = -1;

@@ -1,3 +1,9 @@
+/*
+ * Developed by Atri Tripathi on 14/7/19 9:39 PM
+ * Last modified 13/7/19 4:27 PM
+ * Copyright (c) 2019. All rights reserved
+ */
+
 public class SortingAlgos {
     private void swap(int[] arr, int indexOne, int indexTwo) {
         int temp = arr[indexOne];

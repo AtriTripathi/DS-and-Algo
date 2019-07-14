@@ -1,3 +1,9 @@
+/*
+ * Developed by Atri Tripathi on 14/7/19 9:39 PM
+ * Last modified 14/7/19 9:39 PM
+ * Copyright (c) 2019. All rights reserved
+ */
+
 public class MergeSort {
     private void sort(int[] arr, int lb, int ub) {
         if (lb < ub) {
@@ -38,9 +44,8 @@ public class MergeSort {
      }
 
     public static void main(String[] args) {
-//        int data[] = {7, 9, 5, 2, -5, -1, -2, 0, 4, 3};
+        int data[] = {7, 9, 5, 2, -5, -1, -2, 0, 4, 3};
 
-        int data[] = {2, 13, 5, 11, 7};
         MergeSort mergeSort = new MergeSort();
         mergeSort.sort(data,0,data.length-1);
         mergeSort.printArray(data);

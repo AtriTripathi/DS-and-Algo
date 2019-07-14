@@ -1,3 +1,9 @@
+/*
+ * Developed by Atri Tripathi on 14/7/19 9:39 PM
+ * Last modified 13/7/19 10:55 PM
+ * Copyright (c) 2019. All rights reserved
+ */
+
 public class QuickSort {
     private void swap(int[] arr, int indexOne, int indexTwo) {
         int temp = arr[indexOne];
@@ -19,7 +25,7 @@ public class QuickSort {
         return i;
     }
 
-    // This is the normal sort func, which has worst space case Space Complecity: O(n)
+    // This is the normal sort function, which has worst space case Space Complecity: O(n)
     private void sort(int[] arr, int low, int high) {
         if (low < high) {
             int pi = partition(arr,low,high);
