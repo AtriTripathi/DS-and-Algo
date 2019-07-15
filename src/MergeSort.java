@@ -26,13 +26,13 @@ public class MergeSort {
                 tempArr[k++] = arr[j++];
         }
 
-        while (i < mid)
+        while (i <= mid)
             tempArr[k++] = arr[i++];
         
-        while (j < ub)
+        while (j <= ub)
             tempArr[k++] = arr[j++];
 
-        for (int l = lb; l < ub; l++) {
+        for (int l = lb; l <= ub; l++) {
             arr[l] = tempArr[l];
         }
     }
